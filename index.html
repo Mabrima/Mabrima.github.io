@@ -8,13 +8,21 @@
         0% {
           background-color: purple;
         }
-        50% {
+        10% {
           background-color: red;
           transform: translateY(200px) scale(2) rotate(90deg);
         }
-        100% {
+        20% {
           background-color: aquamarine;
-          transform: translate(200px, 200px) rotate(180deg);
+          transform: translate(200px, 200px) rotate(180deg) scale(3);
+        }
+        80% {
+          background-color: indigo;
+          transform: translate(500px, 250px) scale(20) rotate(359deg);
+        }
+        100% {
+          background-color: black;
+          transform: translate(500px, 250px) scale(20);
         }
       }
       #box{
@@ -22,14 +30,13 @@
         height: 100px;
         margin: 100px;
         background-color: purple;
-        animation: "changeColor" 2s infinite;
+        animation: "changeColor" 10s infinite;
         animation-direction: alternate;
       }
     </style>
   </head>
   <body>
     <h1> Welcome! Now, let the box consume you! </h1>
-
     <div id="box">
     </div>
 
