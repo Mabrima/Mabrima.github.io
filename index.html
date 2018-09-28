@@ -16,13 +16,13 @@
           background-color: aquamarine;
           transform: translate(200px, 200px) rotate(180deg) scale(3);
         }
-        80% {
+        75% {
           background-color: indigo;
-          transform: translate(500px, 250px) scale(20) rotate(359deg);
+          transform: translate(500px, 250px) scaleX(30) scaleY(15) rotate(180deg);
         }
         100% {
           background-color: black;
-          transform: translate(500px, 250px) scale(20);
+          transform: translate(500px, 250px) scaleX(30) scaleY(15);
         }
       }
       #box{
@@ -30,13 +30,18 @@
         height: 100px;
         margin: 100px;
         background-color: purple;
-        animation: "changeColor" 10s infinite;
+        animation: "changeColor" 8s infinite;
         animation-direction: alternate;
       }
     </style>
   </head>
   <body>
-    <h1> Welcome! Now, let the box consume you! </h1>
+    <h1> Welcome! Now, let the box consume you!
+      <nav>
+          <a href="void.html">Quick! Escape!</a>
+        </nav>
+      </h1>
+    <link rel="stylesheet" href="/css/master.css">
     <div id="box">
     </div>
 
